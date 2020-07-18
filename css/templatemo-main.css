@@ -739,6 +739,10 @@ nav a:hover::before {
 
 @media (max-width: 991px) {
 
+	#footer {
+		display: none;
+	}
+
 	nav ul {
   		margin-left: 25px;
   	}
@@ -791,6 +795,10 @@ nav a:hover::before {
 }
 
 @media (max-width: 749px) {
+
+	#footer {
+		display: none;
+	}
 
 	nav {
 		width: 15vh;
@@ -866,5 +874,8 @@ nav a:hover::before {
 	}
 	#social_contact {
 		padding-top: 20px;
+	}
+	#footer {
+		display: none;
 	}
 }
