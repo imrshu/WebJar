@@ -235,8 +235,8 @@ nav a {
   	z-index: 0;
 }
 nav a.active {
-  background-color: #fff;
-  color: #232323;
+	background-color: #b3b1b19c;
+    color: #232323;
 }
 nav a::before {
   content: "";
@@ -282,7 +282,7 @@ nav a:hover::before {
   left: 30%;
   top: 10%;
   bottom: 10%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.74);
 }
 .content::-webkit-scrollbar {
   width: 5px;
@@ -295,22 +295,23 @@ nav a:hover::before {
 }
 
 .slides .slide:nth-child(1) {
-  background-image: url(../img/first_bg.jpg);
+  background-image: url(../img/udback.jpg);
 }
 .slides .slide:nth-child(2) {
-  background-image: url(../img/second_bg.jpg);
+  background-image: url(../img/udback5.jpg);
 }
 .slides .slide:nth-child(3) {
-  background-image: url(../img/third_bg.jpg);
+  background-image: url(../img/back1.jpeg);
 }
 .slides .slide:nth-child(4) {
-  background-image: url(../img/fourth_bg.jpg);
+	background-position: bottom 10px right 160px;
+	background-image: url(../img/udback4.jpg);
  }
 .slides .slide:nth-child(5) {
-  background-image: url(../img/fifth_bg.jpg);
+  background-image: url(../img/contact.jpg);
 }
 .slides .slide:nth-child(6) {
-  background-image: url(../img/fourth_bg.jpg);
+  background-image: url(../img/contact.jpg);
 }
 .slides .slide img {
   width: 100%;
@@ -420,7 +421,7 @@ nav a:hover::before {
 .second-content .right-image img {
 	max-width: 100%;
 	min-width: 100%;
-	height: 507px;
+	height: 535px;
 	overflow: hidden;
 	float: right;
 }
@@ -467,6 +468,18 @@ nav a:hover::before {
 	color: #fff;
 	text-decoration: none;
 	transition: all 0.5s;
+}
+
+.fourth-content .main-btn a {
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 8px 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
 }
 
 
@@ -717,11 +730,18 @@ nav a:hover::before {
 	text-decoration: none;
 }
 
+#social_contact {
+	padding-top: 230px;
+}
 
 
 /* REPONSIVE */
 
 @media (max-width: 991px) {
+
+	#footer {
+		display: none;
+	}
 
 	nav ul {
   		margin-left: 25px;
@@ -775,6 +795,10 @@ nav a:hover::before {
 }
 
 @media (max-width: 749px) {
+
+	#footer {
+		display: none;
+	}
 
 	nav {
 		width: 15vh;
@@ -833,7 +857,9 @@ nav a:hover::before {
 	.fifth-content #contact {
 		padding: 15px 15px 15px 15px;
 	}
-
+	#social_contact {
+		padding-top: 20px;
+	}
 }
 
 @media(max-width: 450px) {
@@ -845,5 +871,11 @@ nav a:hover::before {
 	}
 	nav a {
 	  	padding: 15px 20px;
+	}
+	#social_contact {
+		padding-top: 20px;
+	}
+	#footer {
+		display: none;
 	}
 }
