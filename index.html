@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>webJAR</title>
         <meta charset="utf-8">
@@ -7,8 +7,9 @@
         <meta name="description" content="At webjar, we are providing the best IT work through modern technology">
         <meta name="author" content="Rishabh Verma, Garima Sachdeva">
         <meta name="keywords" content="Web Development, Python & Django, React, Nginx, Gunicorn, API Development, Backend Services">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="theme-color" content="#1a73e8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#131212">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://webjar.ca/">
@@ -23,14 +24,16 @@
         <meta property="twitter:title" content="webJAR | Backend API Development | FrontEnd Development | AWS Deployement">
         <meta property="twitter:description" content="This is a blog about Python, Django and Web Development.">
         <meta property="twitter:image" content="https://webjar.ca/img/shortcut_icon.png">
-        <!-- link tags -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="icon" href="img/shortcut_icon.png" type="image/png" sizes="192x192">
+        <!-- link tags for shortcut icons -->
+        <link rel="icon" href="img/shortcut_icon.png" sizes="192x192">
+        <link rel="apple-touch-icon" href="img/icon_for_apple.png">
+        <meta name="msapplication-square150x150logo" content="img/icon_for_ie.png">
         <!-- css -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
         <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/progressively/dist/progressively.min.css">
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
@@ -47,12 +50,12 @@
   
         <nav>
           <div class="logo">
-            <img src="img/WebJar1.png" style="
+            <img data-progressive="img/WebJar1.png" src="img/WebJar1-lowly.png" class="progressive__img progressive--not-loaded" style="
                 background: #3e3c3c6b;
                 border-radius: 15px;" alt="webjar title">
           </div>
           <div class="mini-logo">
-              <img src="img/logo.png" alt="webjar logo" style="height: 60px;">
+              <img data-progressive="img/logo.png" src="img/logo-lowly.png" class="progressive__img progressive--not-loaded" alt="webjar logo" style="height: 60px; width: 60px;">
           </div>
           <ul>
             <li><a href="#1"><i class="fa fa-home"></i> <em>Home</em></a></li>
@@ -69,7 +72,7 @@
             <div class="content first-content">
               <div class="container-fluid">
                   <div class="col-md-3">
-                      <div class="author-image"><img src="img/logo.png" alt="Author Image"></div>
+                      <div class="author-image"><img src="img/logo.png" alt="Webjar Logo"></div>
                   </div>
                   <div class="col-md-9">
                       <h2>we reach out to you</h2>
@@ -101,7 +104,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="right-image">
-                          <img src="img/AboutUs.jpg" alt="Webjar About us Banner">
+                          <img data-progressive="img/AboutUs.jpg" src="img/AboutUs-lowly.jpg" class="progressive__img progressive--not-loaded" alt="About Webjar Services">
                         </div>
                     </div>
                 </div>
@@ -127,7 +130,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="right-image">
-                                                <img src="img/first_service.jpg" alt="first service">
+                                                <img data-progressive="img/first_service.jpg" src="img/first_service-lowly.jpg" class="progressive__img progressive--not-loaded" alt="first service">
                                             </div>
                                         </div>
                                     </div>
@@ -138,7 +141,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="left-image">
-                                                <img src="img/second_service.jpg" alt="second service">
+                                                <img data-progressive="img/second_service.jpg" src="img/second_service-lowly.jpg" class="progressive__img progressive--not-loaded" alt="second service">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -180,7 +183,7 @@
                                         </div>
                                     </div></a>
                                     <div class="image">
-                                        <img src="img/first_item.png">
+                                        <img data-progressive="img/first_item.png" src="img/first_item-lowly.png" class="progressive__img progressive--not-loaded" alt="search your guru project">
                                     </div>
                                 </div>
                             </div>
@@ -195,7 +198,7 @@
                                         </div>
                                     </div></a>
                                     <div class="image">
-                                        <img src="img/second_item.png">
+                                        <img data-progressive="img/second_item.png" src="img/second_item-lowly.png" class="progressive__img progressive--not-loaded" alt="Yoga asanas project">
                                     </div>
                                 </div>
                             </div>
@@ -210,7 +213,7 @@
                                         </div>
                                     </div></a>
                                     <div class="image">
-                                        <img src="img/third_item.png">
+                                        <img data-progressive="img/third_item.png" src="img/third_item-lowly.png" class="progressive__img progressive--not-loaded" alt="Tourism project">
                                     </div>
                                 </div>
                             </div>
@@ -225,7 +228,7 @@
                                         </div>
                                     </div></a>
                                     <div class="image">
-                                        <img src="img/fourth_item.png">
+                                        <img data-progressive="img/fourth_item.png" src="img/fourth_item-lowly.png" class="progressive__img progressive--not-loaded" alt="Lawyers Automation project">
                                     </div>
                                 </div>
                             </div>
@@ -240,7 +243,7 @@
                                         </div>
                                     </div></a>
                                     <div class="image">
-                                        <img src="img/fifth_item.png">
+                                        <img data-progressive="img/fifth_item.png" src="img/fifth_item-lowly.png" class="progressive__img progressive--not-loaded" alt="Institution site project">
                                     </div>
                                 </div>
                             </div>
@@ -255,7 +258,7 @@
                                         </div>
                                     </div></a>
                                     <div class="image">
-                                        <img src="img/sixth_item.png">
+                                        <img data-progressive="img/sixth_item.png" src="img/sixth_item-lowly.png" class="progressive__img progressive--not-loaded" alt="Solar panel road ways project">
                                     </div>
                                 </div>
                             </div>
@@ -270,7 +273,7 @@
                                         </div>
                                     </div></a>
                                     <div class="image">
-                                        <img src="img/seventh_item.png">
+                                        <img data-progressive="img/seventh_item.png" src="img/seventh_item-lowly.png" class="progressive__img progressive--not-loaded" alt="Rural india thesis project">
                                     </div>
                                 </div>
                             </div>
@@ -285,7 +288,7 @@
                                         </div>
                                     </div></a>
                                     <div class="image">
-                                        <img src="img/eight_item.png">
+                                        <img data-progressive="img/eight_item.png" src="img/eight_item-lowly.png" class="progressive__img progressive--not-loaded" alt="Pay me india project">
                                     </div>
                                 </div>
                             </div>
@@ -300,7 +303,7 @@
                                         </div>
                                     </div></a>
                                     <div class="image">
-                                        <img src="img/ninth_item.png">
+                                        <img data-progressive="img/ninth_item.png" src="img/ninth_item-lowly.png" class="progressive__img progressive--not-loaded" alt="Vehicle danger thesis project">
                                     </div>
                                 </div>
                             </div>
@@ -380,6 +383,11 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/progressively/dist/progressively.min.js"></script>
+
+    <script>
+        progressively.init();
+    </script>
 
     <script>
         function sendEmail() {
@@ -393,9 +401,7 @@
                 alert("All fields are required");
             } else {
                     Email.send({
-                    Host : "smtp.gmail.com",
-                    Username : "webjar2020@gmail.com",
-                    Password : "jar@2020",
+                    SecureToken: '986154b9-73b9-4814-bd6b-4064baf13878',
                     To : 'webjar2020@gmail.com',
                     From : email,
                     Subject : subject,
