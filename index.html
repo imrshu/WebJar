@@ -32,10 +32,11 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/progressively/dist/progressively.min.css">
+        <link rel="stylesheet" href="css/custom.css">
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     </head>
 <body>
     
@@ -52,10 +53,10 @@
           <div class="logo">
             <img data-progressive="img/WebJar1.png" src="img/WebJar1-lowly.png" class="progressive__img progressive--not-loaded" style="
                 background: #3e3c3c6b;
-                border-radius: 15px;" alt="webjar title">
+                border-radius: 15px;" alt="webjar title" onclick="visitHome();">
           </div>
           <div class="mini-logo">
-              <img data-progressive="img/logo.png" src="img/logo-lowly.png" class="progressive__img progressive--not-loaded" alt="webjar logo" style="height: 60px; width: 60px;">
+              <img data-progressive="img/logo.png" src="img/logo-lowly.png" class="progressive__img progressive--not-loaded" alt="webjar logo" style="height: 60px; width: 60px;" onclick="visitHome();">
           </div>
           <ul>
             <li><a href="#1"><i class="fa fa-home"></i> <em>Home</em></a></li>
@@ -325,8 +326,8 @@
                 <div class="container-fluid">
                     <div class="col-md-6" id="social_contact"> 
                         <div class="container-fluid">
-                            <a href=""><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: xxx-large;"></i></a>&nbsp;&nbsp;
-                            <a href="https://www.instagram.com/webjar.ca/"><i class="fa fa-instagram" aria-hidden="true" style="font-size: xxx-large;"></i></a>
+                            <a href=""><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" style="width: 50px;"/></a>&nbsp;&nbsp;
+                            <a href="https://www.instagram.com/webjar.ca/"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" style="width: 50px;"/></a>
                         </div>                 
                     </div>
                     <div class="col-md-6">
@@ -387,6 +388,10 @@
 
     <script>
         progressively.init();
+
+        const visitHome = () => {
+            window.location.href = '/';
+        }
     </script>
 
     <script>
